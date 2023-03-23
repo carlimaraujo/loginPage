@@ -182,3 +182,13 @@ main > img {
   background-size: cover;
   width: 100%;
 }
+
+@media (max-width: 800px){
+  .background{
+    display: none;
+  }
+
+  main{
+    padding: 40px;
+  }
+}
