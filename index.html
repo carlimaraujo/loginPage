@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon" />
+  </head>
+  <body>
+    <main>
+      <img src="./assets/logo.svg" alt="Logo Vertigo" />
+
+      <div class="text">
+        <h1>Acesse a Plataforma</h1>
+        <p>
+          Faça login ou registre-se para começar a construir seus projetos ainda
+          hoje.
+        </p>
+      </div>
+
+      <div class="inputs">
+        <form id="inputs">
+          <div class="email">
+            <span>E-mail</span>
+            <input
+              type="email"
+              name="email"
+              placeholder="Digite seu e-mail"
+              class="input"
+              oninput="input()"
+              required
+            />
+            <p class="error-message" hidden>Digite um e-mail válido</p>
+          </div>
+          <div class="password">
+            <div class="top">
+              <span>Senha</span>
+              <p>Esqueceu a senha?</p>
+            </div>
+            <div class="form-password">
+              <input
+                type="password"
+                class="input"
+                placeholder="Digite sua senha"
+                required
+                minlength="8"
+              />
+              <img
+                src="./assets/eye-off.svg"
+                alt="Ícone de um olho fechado"
+                id="eyeImg"
+                onclick="showPassword(); changeEye()"
+              />
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="button" form="inputs">
+        <button type="submit" form="inputs">Entrar</button>
+        <p>Ainda não tem uma conta? <span>Inscreva-se</span></p>
+      </div>
+    </main>
+    <div class="background"></div>
+  </body>
+
+  <script src="./script.js"></script>
+</html>
