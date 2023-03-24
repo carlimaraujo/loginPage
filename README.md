@@ -26,7 +26,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-Layout de uma página de busca de blocos de carnaval
+Layout de uma página de login
 
 - [Acesse o projeto finalizado, online clicando aqui](https://carlimaraujo.github.io/loginPage/)
 
